@@ -37,7 +37,7 @@ function App() {
           <Container>
             {loading ? (
                 <Dimmer active inverted>
-                  <loader inverted>Loading</loader>
+                  <Loader inverted>Loading</Loader>
                 </Dimmer>
               ) : (
                 <Switch>
