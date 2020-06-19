@@ -44,3 +44,44 @@ div[id="root"] {
   color: rgb(75, 213, 238);
   font-size: 1.25rem;
 }
+
+.intro, .logo {
+  left: 50%;
+  opacity: 0;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  z-index: 200;
+}
+
+.logo {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  width: 18rem;
+}
+
+/*.container:before {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 20%, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0) 100%);
+  bottom: 0;
+  content: " ";
+  left: 0;
+  right: 0;
+  position: absolute;
+  top: 0;
+  z-index: 100;
+}*/
+.crawl {
+  font-size: 300%;
+  bottom: 0;
+  height: 80rem;
+  left: 50%;
+  position: absolute;
+  transform: translateX(-50%) perspective(300px) rotateX(28deg);
+  transform-origin: 50% 100%;
+  width: 90%;
+}
+.mainContent {
+  position: absolute;
+  top: 100%;
+}
